@@ -4,14 +4,24 @@ public class Song {
     private String title;
     private int length;
     private int likes;
+    private Album album;
+    
+        public Song(){
+    
+        }
+    
+        public Song(String title, int length){
+            this.title = title;
+            this.length = length;
+        }
+        public Song(String title, Album album, int length) {
+    
+            this.title = title;
+    
+            this.album = album;
 
-    public Song(){
-
-    }
-
-    public Song(String title, int length){
-        this.title = title;
         this.length = length;
+
     }
 
     public String getTitle() {
@@ -36,5 +46,10 @@ public class Song {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public Object getAlbum() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAlbum'");
     }
 }
